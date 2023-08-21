@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="ms.js" defer></script>
+    <script src="https://kit.fontawesome.com/6669872e60.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 style="font-family: 'Roboto Slab', serif;">My Portfolio</h2>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Frontened Developer</p>
+                <h1>Hi, I'm <span>Nitin</span><br> Kumar form Manesar<br> district Gurugram</h1>
+            </div>
+
+        </div>
+       
+    </div>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="text-align: justify;"> 
+                          Hi ,<br>
+                        I'm a student studying Chemical Engineering at IIT Kharagpur. I come from Manesar  district (Gurugram), Haryana. Besides my studies, I'm really into coding stuff. I know CSS, HTML, and the basics of JavaScript, which help me create cool websites. I'm also learning C++ and the tricks of Data Structures and Algorithms to become a better programmer.
+
+                        When I'm not buried in books or coding, you'll find me enjoying music big time. I love listening to songs that touch my heart. I'm also a volleyball enthusiast – there's something about the game that gets me all excited.
+                        
+                        So, in a nutshell, I'm a mix of a curious student, a coding enthusiast, a music lover, and a volleyball player. I'm all about putting my heart into what I do and exploring the different awesome things life has to offer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link skills" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links experiences" onclick="opentab('experiences')">Experinces</p>
+                        <p class="tab-links education" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id=skills>
+                        <ul><li><Span>Frontened Developer</Span><br> Desigining Web Interfaces</li>
+                            <li>C/C++</li>
+                            <li> basic knowledge of Bootstrap</li></ul>
+                    </div>
+
+                    <div class="tab-contents" id=experiences>
+                        <ul><li><Span>2022..</Span><br> Design 3 website using html, css, javscript and Django</li>
+                            
+                    </div>
+                    <div class="tab-contents"id=education>
+                        <ul><li><Span>2022-2026</Span><br>Pursuing Btech[4yr] in chemical Engineering at IIT Kharagpur</li>
+                            
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- 
+    ----portfolio---- -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+
+                    <div class="layer">
+                        <h3> GMUN-Webpage</h3>
+                        <p>This webpage will basically show the different committee of Global Model United Nation</p>
+                        <a href="https://nitin75408.github.io/GMUN-webpage/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+           
+            
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>MY-vlog</h3>
+                        <p>This webpage is basically gives information about diffenent fields</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+           
+            
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3> GMUN-Webpage</h3>
+                        <p>This webpage will display about various communities of GMUN</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+    </div>
+<!-- 
+    ------contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> nitinmad73@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 9625470486</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/nitin_madaan771"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input placeholder="Message" name="Message" class="Message" required></textarea>
+                          <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copywrite">
+            <p> Copywrite &copy;Nitin Portfolio</p>
+        </div>
+    </div>
+                              
+
+  
+    
+</body>
+</html>
